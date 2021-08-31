@@ -1,0 +1,489 @@
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+  }
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+.col {
+    float: left;
+    padding-right: 8px;
+    /* padding-left: 8px; */
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+#main {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+#text-center {
+    text-align: center!important;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* overflow: hidden;   */
+}
+
+/* nav */
+
+#nav {
+    display: inline-block;
+    position: relative;
+}
+
+#nav> li {
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.subnav li{
+    background-color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    list-style-type: none;
+    text-transform: none;
+}
+#nav li:hover{
+    background-color: #ccc !important;
+}
+#nav li a{
+    color: white;
+    text-decoration: none;
+}
+#nav li .subnav{
+    display: none; 
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 12px;
+    margin-left: -24px;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#subnav li a{
+    display: inline-block;
+}
+
+
+#nav #nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .menu-btn, #header .search-btn {
+    float: right;
+    line-height: 46px;
+}
+#header .menu-btn{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#header .menu-icon{
+    color: black;
+}
+#header .menu-btn:hover{
+    background-color: #ccc;
+}
+#header .search-btn:hover {
+    background-color: #f44338;
+    cursor: pointer;
+}
+
+#header .menu-icon, #header .search-icon {
+    color: white;
+    font-size: 20px;
+    padding: 0 16px;
+    height: 50px;
+}
+/* end-nav */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    width: 100%;
+    left: 0;
+    background: url(/assets/img/slider/la.jpg) top center/cover no-repeat;  
+}
+
+#slider .content-cmt {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+}
+
+#content {
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.95); */
+}
+
+#conten #info-content {}
+
+#content .content-header {
+    color: white;
+    padding: 64px 0 64px;
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#content .content-heading {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#content .content-sub-heading {
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-content {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+#content .member-list {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#content .member-name {
+    margin-bottom: 15px;
+}
+
+#content .member-item {
+    color: white;
+    float: left;
+    width: 33.333333%;
+}
+
+#content .member-img {
+    border-radius: 4px;
+    width: 154px;
+    vertical-align: middle;
+}
+
+#content .content-heading {
+    margin-top: 40px;
+}
+
+.tour-content {
+    width: 100%;
+    margin: 0%;
+    background-color: black;
+    display: inline-block;
+}
+
+#content .ticket-content {
+    color: white;
+    list-style-type: none;
+    text-align: left;
+    
+}
+
+#content .ticket-content li {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #757575;
+    padding: 12px;
+    margin: 0 12px;
+    border: blanchedalmond ;
+}
+
+#content .ticket-header {
+    margin-bottom: 40px;
+
+}
+
+.ticket-header .sold-out {
+    background-color: red;
+    padding: 3px 4px;
+    margin-left: 12px;
+}
+
+.ticket-header .quanlity {
+    float: right;
+    border-radius: 50%;
+    background-color: black;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin-top: -3px;
+    line-height: 1.5;
+}
+
+.clear-fix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#content .content-header {}
+
+#content .content-heading {}
+
+#content .content-sub-heading {}
+
+#content .contact-content {
+    width: 800px;
+    margin-bottom: 8px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-right: 24px; */
+    color: black;
+    text-align: left;
+}
+
+#content .places {
+    float: left;
+    padding: 8px 12px;
+    margin-bottom: 46px;
+    width: 33.3333%;
+}
+
+#content .img-contact {
+    width: 100%;
+}
+
+#content .places-content {
+    background-color: white;
+    padding: 0.15px 16px;
+    font-size: 15px;
+}
+
+#content h3 {
+    margin-top: 8px;
+}
+
+#content .contact-date {
+    margin: 16px 0;
+}
+
+#content .contact-info {
+    font-family: sans-serif;
+    margin-bottom: 12px;
+}
+
+#content .buy-contact {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+#content .places-content a:hover {
+    background-color: #ccc;
+}
+
+#content .buy-contact:hover {
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+
+/* Contact */
+
+.info-contact {
+    text-align: left;
+    margin-left: 16px;
+    line-height: 1.5;
+}
+
+.info-contact p i {
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.contact-form {
+    padding-right: 12px;
+}
+
+.sub.contact-form {
+    color: white;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    border: 1px solid #ccc!important;
+    padding: 8px;
+    margin: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.contact-form .form-submit {
+    color: #fff!important;
+    background-color: rgba(0, 0, 0, 0.95)!important;
+    float: right!important;
+    margin-top: 16px!important;
+    margin-bottom: 16px!important;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.contact-form .form-submit:hover {
+    background-color: #ccc !important;
+    color: black;
+    cursor: pointer;
+}
+
+row::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+#footer {}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container {
+    animation: modalFadeIn ease .5s;
+    background-color: white;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.modal-input {
+    width: 100%;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.buy-ticket {
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    background-color: #009688;
+}
+
+.buy-ticket:hover {
+    cursor: pointer;
+}
+
+.modal-footer {
+    float: right;
+    display: inline-block;
+    padding: 16px
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+
+.modal.open {
+    display: flex;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-130px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
